@@ -1,15 +1,27 @@
-# Wisata Candi
+# 01 - Persiapan Proyek
 
-Aplikasi contoh untuk mata kuliah Pengembangan Aplikasi Bergerak I.
+## Deskripsi
+Materi ini mempersiapkan proyek Flutter yang akan digunakan sepanjang perkuliahan.
 
-## Teknologi
+## Tujuan Pembelajaran
+- Membuat proyek Flutter.
+- Menyiapkan struktur direktori.
+- Menambahkan aset proyek.
+- Menambahkan package eksternal.
+- Membuat model data.
+- Menyiapkan DetailScreen sebagai kerangka.
 
-- Flutter
-- Dart
-- Provider
+## Materi
+- Struktur proyek
+- pubspec.yaml
+- Assets
+- cached_network_image
+- Data Dummy
+- Model Candi
+- DetailScreen (kerangka)
 
-## Tujuan
+## Hasil Akhir
+Pada akhir materi ini, proyek sudah siap untuk mengimplementasikan Detail Screen pada materi berikutnya.
 
-Repository ini digunakan sebagai contoh pengembangan aplikasi Flutter secara bertahap selama satu semester.
-
-Setiap commit merepresentasikan perkembangan materi perkuliahan.
+## Materi Selanjutnya
+➡️ 02-detail-screen
