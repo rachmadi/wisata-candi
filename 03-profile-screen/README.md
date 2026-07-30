@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-Pada materi ini dikembangkan layar **Profile Screen** sebagai contoh penerapan
+Pada materi ini dikembangkan **Profile Screen** sebagai contoh penerapan
 StatefulWidget, layout bertingkat, dan perubahan tampilan berdasarkan state.
 
 ## Tujuan Pembelajaran
@@ -11,8 +11,7 @@ StatefulWidget, layout bertingkat, dan perubahan tampilan berdasarkan state.
 - Menyusun tampilan menggunakan Stack, Column, Row, dan Container.
 - Menggunakan CircleAvatar untuk foto profil.
 - Mengelola state sederhana menggunakan `setState()`.
-- Menampilkan komponen secara kondisional berdasarkan status `isSignedIn`.
-- Melakukan refaktorisasi widget yang berulang menjadi widget terpisah.
+- Menampilkan widget secara kondisional berdasarkan status `isSignedIn`.
 
 ## Materi
 
@@ -23,26 +22,42 @@ StatefulWidget, layout bertingkat, dan perubahan tampilan berdasarkan state.
 - TODO pada Android Studio
 - Conditional Widget
 - setState()
-- Refactoring Widget
 
 ## Hasil Akhir
 
-Pada akhir materi ini telah tersedia:
+Profile Screen memiliki tiga bagian utama:
 
 - ProfileHeader
 - ProfileInfo
 - ProfileAction
-- Implementasi sederhana Sign In / Sign Out menggunakan `setState()`
-- Widget `ProfileInfoItem` hasil refaktorisasi
+
+Selain itu telah tersedia implementasi sementara Sign In / Sign Out menggunakan `setState()`.
+
+## Refactoring
+
+Pada implementasi awal, informasi profil disusun menggunakan tiga buah `Row`
+yang memiliki struktur kode hampir sama.
+
+Sebagai latihan, kode tersebut kemudian direfaktorisasi dengan memindahkan
+bagian yang berulang ke dalam widget `ProfileInfoItem`.
+
+Tujuan refactoring adalah:
+
+- mengurangi duplikasi kode;
+- meningkatkan keterbacaan;
+- meningkatkan reusability;
+- mempermudah pemeliharaan.
+
+Refactoring **tidak mengubah perilaku aplikasi**, tetapi memperbaiki struktur
+kode agar lebih bersih dan lebih mudah dikembangkan.
 
 ## Catatan
 
-Implementasi berikut **belum** dilakukan pada materi ini:
+Implementasi berikut **belum** dilakukan pada materi ini dan akan dibahas pada
+pokok bahasan berikutnya:
 
 - Navigasi ke layar lain
 - Edit nama lengkap
 - SharedPreferences
-- Sign In / Sign Up sesungguhnya
+- Sign In / Sign Up
 - Pengambilan gambar dari kamera atau galeri
-
-Fitur-fitur tersebut akan dilanjutkan pada materi berikutnya sesuai pokok bahasan.
